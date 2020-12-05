@@ -1,10 +1,10 @@
 public class Star {
 
-    String starName = "";
-    String starID = "";
-    double starDistance;
-    double starApparentMagnitude;
-    String starType = "";
+    private String starName = "";
+    private String starID = "";
+    private double starDistance;
+    private double starApparentMagnitude;
+    private String starType = "";
 
     public Star(){
 

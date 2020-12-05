@@ -23,4 +23,22 @@ public class StarsDB {
     public Star getStar(int index) {
         return stars[index];
     }
+
+    public String getStarname(String starID){
+        String starname = "";
+        boolean contains = false;
+        for (int i = 0; i < stars.length; i++ ){
+            if (stars[i].getStarID().equals(starID)){
+                contains = true;
+                starname = stars[i].getStarName();
+
+            }
+        }
+        if (!contains){
+            return "There is no such star.";
+        }
+        return starname;
+
+    }
+    
 }
