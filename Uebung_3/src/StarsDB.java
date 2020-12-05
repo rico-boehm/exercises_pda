@@ -40,5 +40,5 @@ public class StarsDB {
         return starname;
 
     }
-    
+
 }
