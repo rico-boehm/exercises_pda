@@ -1,5 +1,3 @@
-import org.jetbrains.annotations.Contract;
-
 public class MergeSort {
     public static void main (String[] args){
 
@@ -21,7 +19,12 @@ public class MergeSort {
         }
         int pointer1 = leftIndex;
         int pointer2 = mid+1;
+        int[] tmp = new int[keys.length];
         while (pointer1 < mid+1 || pointer2 < rightIndex){
+            if (pointer1 <= pointer1+pointer2-mid+1 || pointer2 <= pointer1+pointer2-mid+1){
+                tmp[pointer1] = keys[pointer1];
+                tmp[pointer2] = keys[pointer2];
+            }
             if (keys[pointer1] <= keys[pointer2]){
                 keys[pointer1+pointer2-mid+1] = keys[pointer1];
                 pointer1++;

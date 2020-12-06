@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="05d5d297-5efd-4b34-8138-d5e91a0f1cea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Quicksort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quicksort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise_7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/exercise_7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MergeSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Quicksort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -72,6 +74,7 @@
       <workItem from="1607245967411" duration="181000" />
       <workItem from="1607246209224" duration="5000" />
       <workItem from="1607246334183" duration="5148000" />
+      <workItem from="1607283580427" duration="1746000" />
     </task>
     <servers />
   </component>
