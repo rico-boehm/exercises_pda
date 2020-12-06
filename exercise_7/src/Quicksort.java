@@ -20,25 +20,25 @@ public class Quicksort {
         quickSort(keys, 0, keys.length-1);
     }
     public static void quickSort(int keys[], int leftIndex, int rightIndex){
-        if (rightIndex > leftIndex){
-            int pivotValue = keys[rightIndex];
+        if (rightIndex > leftIndex){ //check if rightIndex is really right of leftIndex, in case something went wrong
+            int pivotValue = keys[rightIndex]; //set the right most element as pivotelement
             int i = leftIndex;
-            int j = rightIndex;
+            int j = rightIndex; //set counters as the left and right most element
             while (true){
                 while (i < rightIndex && keys[i] <= pivotValue){
-                    i = i+1;
+                    i = i+1; //count up i until we find an element that is bigger than the pivotelement or until i is at the right end of the array
                 }
                 while(j > i && keys[j] >= pivotValue){
-                    j = j-1;
+                    j = j-1; //count down j until we find an element that is smaller than the pivotelement or until j is equal to i
                 }
                 if (i >= j){
-                    break;
+                    break; // if j and i moved past each other break out of the loop, as there are no more elements in the wrong place
                 }
-                swap(keys, i, j);
+                swap(keys, i, j); // when we found two elements in the wrong place, swap them
             }
-            swap(keys, i, rightIndex);
+            swap(keys, i, rightIndex); // swap the pivotelement to the middle of the array
             quickSort(keys, leftIndex, i-1);
-            quickSort(keys, i+1, rightIndex);
+            quickSort(keys, i+1, rightIndex); //continue the sort with the two new, smaller arrays
         }
     }
 
